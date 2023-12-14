@@ -17,7 +17,7 @@ do
   MONTH=$(printf "%02d" $i)
   for item in "01. Requirements" "02. Design" "03. Source Code" "04. Test"
   do
-    itemFolder="$BASE_FOLDER/$MONTH/$item"
+    itemFolder="$BASE_FOLDER/$MONTH/$item/$PROJECT"
 #     echo $itemFolder
     [ ! -d "$itemFolder" ] && mkdir -p "$itemFolder"
   done
